@@ -1,0 +1,51 @@
+/* Asegura que el body ocupa toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center;    /* Centra horizontalmente */
+    background-color: #ecbefa; /* Fondo suave */
+}
+
+/* Estilo para el h1 (arriba) */
+h1 {
+    font-family: Verdana;
+    font-size: 75px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 2000px;
+    height: 220px;
+    background-color: rgb(206, 120, 247);
+    display: flex;
+    justify-content: center;  /* Centra el texto horizontalmente */
+    align-items: center;      /* Centra el texto verticalmente */
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.contenedor-h2 {
+    flex-grow: 1; /* Ocupa el espacio restante debajo del h1 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo para el h2 */
+h2 {
+    font-family: "Lucida Handwriting";
+    font-size: 40px;
+    font-weight: bold;
+    width: 1000px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
