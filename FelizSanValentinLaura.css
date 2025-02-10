@@ -10,9 +10,8 @@ html, body {
 
 /* Estilo para el h1 (arriba) */
 h1 {
-    font-family: Verdana;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 75px;
-    font-weight: bold;
     width: 100%;
     max-width: 2000px;
     height: 220px;
@@ -27,12 +26,12 @@ h1 {
     right: 0;
 }
 
-.contenedor-h2 {
+.contenedor {
     flex-grow: 1; /* Ocupa el espacio restante debajo del h1 */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
 }
 
 /* Estilo para el h2 */
@@ -40,12 +39,20 @@ h2 {
     font-family: "Lucida Handwriting";
     font-size: 40px;
     font-weight: bold;
-    width: 1000px;
-    height: 270px;
+    width: 1200px;
+    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+.izquierda, .derecha {
+    width: 400px; /* Ajusta el tamaño de la imagen según necesites */
+    height: auto;
+    margin: 0 100px; /* Espacio entre la imagen y el texto */
+}
+
+
 
 
