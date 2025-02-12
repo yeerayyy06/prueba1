@@ -1,57 +1,59 @@
-/* Asegura que el body ocupa toda la pantalla */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: center;    /* Centra horizontalmente */
-    background-color: #ecbefa; /* Fondo suave */
-}
-
-/* Estilo para el h1 (arriba) */
-h1 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 75px;
-    width: 100%;
-    max-width: 2000px;
-    height: 220px;
-    background-color: rgb(206, 120, 247);
-    display: flex;
-    justify-content: center;  /* Centra el texto horizontalmente */
-    align-items: center;      /* Centra el texto verticalmente */
+body {
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: #ffe6f2;
 }
 
 .contenedor {
-    flex-grow: 1; /* Ocupa el espacio restante debajo del h1 */
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 70%;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
-
-/* Estilo para el h2 */
-h2 {
-    font-family: "Lucida Handwriting";
-    font-size: 40px;
-    font-weight: bold;
-    width: 1200px;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.texto {
+    font-size: 23px;
+    background-color: #ffccdc;
+    padding: 40px;
+    border-radius: 15px;
     text-align: center;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.imagenes {
+    display: flex;
+    gap: 10px; 
+}
+.imagen {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4d79;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.izquierda, .derecha {
-    width: 400px; /* Ajusta el tamaño de la imagen según necesites */
-    height: auto;
-    margin: 0 100px; /* Espacio entre la imagen y el texto */
+button:hover {
+    background-color: #e6005c;
 }
+#imagenEntradas {
+    margin-top: 20px;
+}
+.oculto {
+    display: none;
+}
+
+
 
 
 
